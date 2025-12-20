@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Protocol"
+  given-names: "Basin"
+title: "Basin Protocol: Thermodynamic Alignment for AI"
+version: 0.0.1
+date-released: 2024-12-20
+url: "https://github.com/noisallgoodman-stack/basin-protocol-core"
