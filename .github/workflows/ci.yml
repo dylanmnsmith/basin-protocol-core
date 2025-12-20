@@ -17,4 +17,5 @@ jobs:
         pip install pytest numpy
     - name: Run tests
       run: |
-        pytest tests/
+        # This line is the fix: it tells Python to look in the current folder for 'src'
+        PYTHONPATH=. pytest tests/
