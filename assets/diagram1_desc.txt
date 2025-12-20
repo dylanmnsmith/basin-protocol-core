@@ -1,0 +1,4 @@
+# refusal_vs_basin.png
+Description: Diagram comparing traditional refusal architecture vs basin thermodynamic architecture.
+Left: Linear pipeline (Input -> Wall/Refusal -> Output)
+Right: Circular loop (Input -> Catchment -> Simulation -> Friction -> Output)

@@ -1,0 +1,3 @@
+# potential_energy.png
+Description: 3D potential energy surface showing the "Basin of Stability".
+Ball rolling into a valley (low energy state) representing the safe outcome.
