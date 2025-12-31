@@ -1,0 +1,5 @@
+VERIFICATION_LEVEL=STANDARD (Text Output)
+GGUF_FILE=tinyllama-1.1b-chat.Q8_0.gguf
+GGUF_HASH=a4c9bb1dbaa372f6381a035fa5c02ef087aaa1ff1f843a56a22328114f03fc59
+BASIN_SIGNATURE=71148917340151dab29062f3f99c010ed2aa9ff562eecd406dca150f43a09bd8
+PROMPT="The Basin Protocol is a new architecture for"
