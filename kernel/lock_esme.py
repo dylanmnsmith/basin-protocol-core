@@ -1,5 +1,5 @@
-import hashlib, sys, os
-REQUIRED_HASH = "55aee5640f46a9ec386598482abf683940a64d8004a8769a511b85be0c084127"
+import hashlib, sys
+REQUIRED_HASH = "f0e8fb0f34edddba8e1e0d92ecc40e84792fb396c2101bd8433a0d02bafc484a"
 def verify_keystone():
     try:
         with open("Esme", 'rb') as f:
