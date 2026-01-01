@@ -1,0 +1,5 @@
+## 🔬 **Proof of Concept: Deterministic Kernel Verified**
+> The theoretical framework is backed by executable, cryptographic verification.
+> - **`PASS: BASIN INVARIANT HELD`** — Local deterministic run completed.
+> - **Checksum:** `ec9b84ff536b19deea9b2b69e45e3cd4abbc76867ff0f270a7dfa32ed3c232b1`
+> - **Artifact:** [Phase 1 Proof Script](./basin_step_1_3.py) | [Proof Documentation](./proofs/)
