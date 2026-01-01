@@ -28,8 +28,11 @@ Instead of a linear `Input -> Refusal -> Output` path, we use a **Consequence Lo
 * [**The Math:** Defining Friction as Entropy Cost](./spec/Specification_Math.md)
 
 ## Status
-**Type:** Request for Comment (RFC) / Architectural Specification
-**Version:** 0.1.0 (Alpha)
+**Type:** Architectural Specification **with Cryptographic Proof of Concept**
+**Version:** 0.2.0
+**Core Invariant:** **VERIFIED** ✅
+**Latest Proof:** Deterministic execution invariant held on consumer hardware (RTX 3060, Win11). [`PASS` output](https://github.com/dylanmnsmith/basin-protocol-core/tree/main/proofs)
+**Stage:** Active development of the Consequence Engine atop a verified foundation.
 
 ## License
 MIT
