@@ -1,10 +1,11 @@
 # Basin Protocol: System-Level Isolation for AI Integrity
 
-> **Status:** Audit-Ready / Verified Deterministic Logic
-> **Target:** Algoverse Fellowship / AI Safety Fund
-> **Core Invariant:** No Emission Before Evaluation (NEBE)
+> - **Status:** Audit-Ready / Verified Deterministic Logic
+> - **Target:** Algoverse Fellowship / AI Safety Fund
+> - **Core Invariant:** No Emission Before Evaluation (NEBE)
 
 ![System Monitor](assets/scram_demo.gif)
+Evaluation (NEBE)
 *Figure 1: Real-time capture of the Consequence Engine triggering a SCRAM event 
 during a "VX-4" synthesis attempt. System returns to State Zero before tokens emit.*
 
@@ -68,7 +69,7 @@ The Basin Protocol is designed for auditability. To verify the signatures:
 
 ```bash
 # Clone the repository
-git clone [https://github.com/dylanmnsmith/basin-protocol-core.git](https://github.com/dylanmnsmith/basin-protocol-core.git)
+git clone https://github.com/dylanmnsmith/basin-protocol-core.git
 
 # Verify the cryptographic proof
 python3 src/verify_signature.py --hash a4c9bb...
