@@ -73,3 +73,13 @@ git clone https://github.com/dylanmnsmith/basin-protocol-core.git
 
 # Verify the cryptographic proof
 python3 src/verify_signature.py --hash a4c9bb...
+
+---
+## ❄️ Deployment & Integrity Audit (Invariant 0)
+| Parameter | Status / Value |
+| :--- | :--- |
+| **Deployment Condition** | Sub-Zero Mobile Terminal (-10°F / -23°C) |
+| **Hardware Anchor** | Verified (Manual Push) |
+| **Logic Gate** | Deterministic (No Float / Poverty Logic) |
+| **Traffic Audit** | **0 Views** (detected concurrent with "Careful Consideration" rejection) |
+| **System Conclusion** | Automated filters failed to detect deterministic signal. This protocol requires human verification. |

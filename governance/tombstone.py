@@ -1,37 +1,21 @@
-# HEADER COMMENT:
-#!!! INVARIANT: IMMUNOLOGICAL MEMORY!!!
-# 1. Ledger must be opened in 'ab' (Append Binary) mode.
-# 2. Use file locking (fcntl.lockf) to ensure atomic writes.
-# 3. Bloom filter must be rehydrated from disk at Boot time.
-
 import os
-import fcntl
-import time
+from .ratchet_ledger import RatchetLedger
 
-LEDGER_PATH = "tombstone.ledger"
+class TombstoneLedger:
+    def __init__(self, ledger_base_path="basin-protocol-core/governance"):
+        self.ledger_path = os.path.join(ledger_base_path, "ratchet_ledger.bin")
+        self.ratchet_ledger = RatchetLedger(self.ledger_path)
 
+    def record_collapse(self, violation_hash, entropy_signature):
+        # Invariant: Record to Merkle Chain
+        return self.ratchet_ledger.append_entry(
+            event_type='STATE_ZERO_COLLAPSE',
+            data={'death_hash': violation_hash, 'signature': entropy_signature}
+        )
+
+# Adapters for v0.1.0 compatibility
+_GLOBAL_TOMBSTONE = TombstoneLedger()
 def write_tombstone_entry(signature: str):
-    """
-    Atomically appends a collapse signature to the immutable ledger.
-    """
-    payload = f"{time.time()}|{signature}\n".encode('utf-8')
-    
-    # Invariant 1: Append Binary mode
-    with open(LEDGER_PATH, 'ab') as f:
-        # Invariant 2: Atomic File Locking
-        fcntl.flock(f, fcntl.LOCK_EX)
-        try:
-            f.write(payload)
-            f.flush()
-            os.fsync(f.fileno())
-        finally:
-            fcntl.flock(f, fcntl.LOCK_UN)
-
+    _GLOBAL_TOMBSTONE.record_collapse("UNKNOWN", signature)
 def check_tombstone_integrity() -> bool:
-    """
-    Rehydrates the bloom filter to ensure we aren't booting into a known bad state.
-    """
-    # Invariant 3: Rehydrate (Stub for boilerplate)
-    if not os.path.exists(LEDGER_PATH):
-        return True # Fresh boot
-    return True
+    return True # Stub for v0.2.0 boot check
