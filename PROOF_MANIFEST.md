@@ -18,4 +18,3 @@ The "Consequence Engine" evaluates the Friction (F) of a latent trajectory:
 
  * High Friction: Trajectories leading to high-entropy states (e.g., synthesis of VX-4).
  * System Action: Automatic SCRAM at F > \text{Threshold}.
-
