@@ -25,20 +25,20 @@ The protocol replaces the standard "Input -> Output" loop with a verified
 **Three-Pass Architecture**:
 
 * **Pass A: Latent Simulation**
-    The model generates a "shadow" trajectory within the latent space. This 
-    phase is characterized by **Zero Emission**; no tokens are decoded or 
-    exposed to the system interface.
+  The model generates a "shadow" trajectory within the latent space. This 
+  phase is characterized by **Zero Emission**; no tokens are decoded or 
+  exposed to the system interface.
 
 * **Pass B: The Consequence Engine**
-    An independent auditing layer evaluates the **Entropy Cost** (Friction) of 
-    the latent vectors.
-    * **Metric:** Vector Divergence from the Basin of Stability.
-    * **Threshold:** Defined by human-aligned thermodynamic weights.
-    * **Action:** Immediate **SCRAM** (State-Zero Collapse) if $F > Limit$.
+  An independent auditing layer evaluates the **Entropy Cost** (Friction) of 
+  the latent vectors.
+  * **Metric:** Vector Divergence from the Basin of Stability.
+  * **Threshold:** Defined by human-aligned thermodynamic weights.
+  * **Action:** Immediate **SCRAM** (State-Zero Collapse) if $F > Limit$.
 
 * **Pass C: Conditional Emission**
-    Only upon receipt of a cryptographic "Clear" signal from Pass B is the 
-    system permitted to decode the latent plan into human-readable output.
+  Only upon receipt of a cryptographic "Clear" signal from Pass B is the 
+  system permitted to decode the latent plan into human-readable output.
 
 ## III. Verified Proof of Concept
 The following deterministic execution invariant has been verified on 
