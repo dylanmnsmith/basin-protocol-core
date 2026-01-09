@@ -1,3 +1,18 @@
+# Project TOMBSTONE: Thermodynamic Alignment Protocol
+
+> **⚠️ PUBLIC PRIOR ART DECLARATION ⚠️**
+> **Inventor:** Dylan Patrick Page Smith
+> **Original Submission Date:** January 2026
+> **Submission Target:** Air Force Research Lab (AFRL), BAA FA8750-21-S-7006
+>
+> **Legal Notice:** This architecture, including the "Poverty Logic" and "NEBE" protocols, is the intellectual property of the author. It is released here publicly to establish prior art. Commercial use or patenting by third parties is prohibited without license.
+
+---
+
+*(Original Documentation Below)*
+
+
+
 # Basin Protocol: System-Level Isolation for AI Integrity
 
 > - **Status:** Audit-Ready / Verified Deterministic Logic
